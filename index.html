@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // boucle while
+        let i = 0;
+        while (i < 10) {
+            console.log('bonjour' + i)
+            i++
+        }
+
+        // boucle for
+        const notes = [12, 13, 14, 6]
+        for (let i = 0; i < notes.length; i++) {
+            console.log(notes[i])
+        }
+
+        for (let i in notes) {
+            console.log(notes[i])
+        }
+
+        // of va afficher la valeur
+        const greeting = "Bonjour"
+        for (let letter of greeting) {
+            console.log(letter)
+        }
+
+        // in va afficher l'index
+        for (let letter in greeting) {
+            console.log(letter)
+        }
+
+
+        //Demander un chiffre compris en entre 1 et 10
+        // tester si le chiffre est inférieur à 10
+        // si oui afficher tous les chiffres inférieurs au chiffre donné
+
+        let number = prompt("Ecrivez un chiffre compris entre 1 à 10")
+
+        if (number > 10 || isNaN(number) || number < 0) {
+            alert("Ce n'est pas un chiffre compris entre 1 et 10")
+        } else {
+            while (number > 0) {
+                console.log(number)
+                number--
+            }
+        }
+
+
+        //demander à l'utilisateur de trouver un nombre
+
+        let random = 8
+        let userNumber
+        while (random !== userNumber) {
+            userNumber = (prompt("Votre chiffre") * 1)
+
+            if (random > userNumber) {
+                console.log("plus")
+            }
+            else if (random < userNumber) {
+                console.log("moins")
+            }
+        }
+        console.log("Bravo")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
